@@ -1,0 +1,146 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+justify-items: center;
+}
+
+.headtext {
+  margin-bottom: 10px;
+  font-size: 120px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Layout container */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Main content */
+section, article {
+  flex: 2;
+  min-width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Sidebar */
+aside {
+  flex: 1;
+  min-width: 250px;
+  background: #eee;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: #004466;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.up-button {
+display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 5 columns */
+  grid-template-rows: repeat(1, auto);  /* 6 rows */
+  gap: 10px; /* spacing between grid items */
+  padding: 10px;
+}
+
+.down-button {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 5 columns */
+  grid-template-rows: repeat(5, auto);  /* 6 rows */
+  gap: 10px; /* spacing between grid items */
+  padding: 10px;
+}
+.down-button button {
+
+  padding: 20px;
+  margin: 0px;
+  text-align: center;
+  border: 1px solid #ccc;
+
+}
+.top-button {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 5 columns */
+  grid-template-rows: repeat(5, auto);  /* 6 rows */
+  gap: 10px; /* spacing between grid items */
+  padding: 10px;
+}
+.top-button button {
+
+  padding: 20px;
+  margin: 0px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.black-button {
+  background-color: black;
+  color:white
+}
+.blue-button {
+  background-color: blue;
+  color: white
+}
+.white-button {
+  background-color: white;
+
+}
+.red-button {
+  background-color: red;
+  color: white
+}
+.plus {
+  grid-row: span 2
+}
+.black-button:hover {
+  background-color:white ;
+  color: black
+}
+.blue-button:hover {
+  background-color: black;
+  color:aqua
+}
+.red-button:hover {
+  background-color: white;
+  color:#333
+}
+.white-button:hover {
+  background-color: black;
+  color:white
+}
